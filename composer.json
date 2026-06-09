@@ -1,0 +1,46 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "froxlor/example",
+    "type": "library",
+    "description": "The froxlor example package.",
+    "keywords": [
+        "froxlor",
+        "example",
+        "package"
+    ],
+    "homepage": "https://www.froxlor.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Kaufmann",
+            "email": "d00p@froxlor.org",
+            "role": "Lead Developer"
+        },
+        {
+            "name": "Maurice Preuß",
+            "email": "envoyr@froxlor.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "froxlor/core": "*",
+        "froxlor/ui": "*",
+        "illuminate/support": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Froxlor\\Example\\": "src/"
+        }
+    },
+    "extra": {
+        "froxlor": {
+            "type": "package"
+        },
+        "laravel": {
+            "providers": [
+                "Froxlor\\Example\\Providers\\FroxlorExampleServiceProvider"
+            ]
+        }
+    }
+}
